@@ -1,0 +1,26 @@
+GET http://localhost:9000/subscribers
+
+###
+
+GET http://localhost:9000/subscribers/5f41d2f2e6b4e85b18a3f0ec
+
+###
+POST http://localhost:9000/subscribers
+Content-Type: application/json
+
+{
+    "name": "HITS Srivastava",
+    "subscribedToChannel": "BBC International"
+}
+
+###
+
+DELETE http://localhost:9000/subscribers/5f41e7578794b9355c50d7b1
+
+###
+PATCH  http://localhost:9000/subscribers/5f41d2f2e6b4e85b18a3f0ec
+Content-Type: application/json
+
+{
+    "name": "Times of India"
+}
